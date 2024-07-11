@@ -6,18 +6,44 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
     </head>
     <body>
 
-        <header></header>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav float-end ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Connect</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
         
         <main>
+            <!-- Hobbies and Interests -->
             <div class="container">
                 <div class="row">
-                  <div class="offset-md-4 col-md-4">
-                    <h1 class="my-5">Tommy Galmiche - Web-Developer</h1>
-                    <p>Hi, I have been designing and developing websites and web-based applications for the last 10 years. I have been working across various industries and acquired a proven expertise in addressing problematics like accessibility, responsive design, security and performance.</p>
+                  <div class="col-12">
+                    <h2 class="my-5">About</h1>
+                    <!--<p>Hi, I have been designing and developing websites and web-based applications for the last 10 years. I have been working across various industries and acquired a proven expertise in addressing problematics like accessibility, responsive design, security and performance.</p>
 
                     <figure class="my-4">
                         <img src="assets/images/programmer.jpg" alt="" class="w-100">
@@ -26,16 +52,29 @@
                         </figcaption>
                     </figure> 
 
+                    <p>Right now, I'm crafting something on jmy own, here. So, stay tuned! In the meantime, you can check me out on <a href="https://github.com/t0mG33" target="_blank">GitHub</a> or <a href="https://codepen.io/tgalmiche" target="_blank">CodePen</a>. If you'd like to get in touch, feel free to contact me on <a href="https://ca.linkedin.com/in/tommy-galmiche-24565527" target="_blank">LinkedIn</a>!</p>-->
 
-                    <p>Right now, I'm crafting something on jmy own, here. So, stay tuned! In the meantime, you can check me out on <a href="https://github.com/t0mG33" target="_blank">GitHub</a> or <a href="https://codepen.io/tgalmiche" target="_blank">CodePen</a>. If you'd like to get in touch, feel free to contact me on <a href="https://ca.linkedin.com/in/tommy-galmiche-24565527" target="_blank">LinkedIn</a>!</p>
+                    <div class="col-12">
+                        <h2>Hobbies & Interests</h2>
+
+                        <p class="my-2">On my down time, I really like to step away for keyboards and screens and get some exercise, learn new things, get closer to nature and enjoy life! Below are a few of my main hobbies and interests:</p>
+
+                        <div id="hobbies-filters">
+                            <button id="hobbies-only" class="btn btn-light js-filter-btn">Show hobbies only</button>
+                            <button id="interests-only" class="btn btn-light js-filter-btn">Show interests only</button>
+                            <button id="show-all" class="btn btn-light js-filter-btn">Show all</button>
+                        </div>
+                        <ul id="hobbiesAndInterest" class="my-2 ps-0"></ul>
+                    </div>
 
                   </div>
                 </div>
             </div>
+
         </main>
 
         <footer></footer>
         
-        <script src="" async defer></script>
+        <script src="main.js" async defer></script>
     </body>
 </html>
